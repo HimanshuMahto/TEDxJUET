@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>Contact • TEDxPVGCOET</title>
+    <title>Contact • TEDxJUET</title>
 
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/favicon.png">
@@ -53,13 +53,13 @@
                                 <!-- <li class="active"><a href="index.html">Home</a></li> -->
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="team.html">Team</a></li>
                                 <li><a href="speakers.html">Speakers</a></li>
+                                <li><a href="team.html">Team</a></li>
                                 <li><a href="https://www.ted.com/tedx/events/26452">Events</a></li>
                             </ul>
 
                             <!-- Register Button -->
-                            <a href="https://forms.gle/9C6kJ9fZWa4o8gLa9" target="_blank" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Get Passes <i
+                            <a href="https://forms.gle/2ixs1F9hVT5GviaW7" target="_blank" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Get Passes <i
                                     class="zmdi zmdi-long-arrow-right"></i></a>
                         </div>
                         <!-- Nav End -->
@@ -110,13 +110,13 @@
                             <p>For specific enquiries, kindly email us at <a href="mailto:tedx@juetguna.in">tedx@juetguna.in</a></p>
                         </div>
                         <div class="contact_form">
-                            <form action="mail.php" method="post">
+                            <form onsubmit="sendEmail(); reset(); return false;">
                                 <div class="contact_input_area">
                                     <div class="row">
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="name" id="name" placeholder="Your Name" required>
+                                                <input type="text" class="form-control mb-30" name="name" id="name" placeholder="First Name" required>
                                             </div>
                                         </div>
                                         <!-- Form Group -->
@@ -134,7 +134,7 @@
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Your Number">
+                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Phone Number">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
@@ -145,7 +145,7 @@
                                         </div>
                                         <!-- Button -->
                                         <div class="col-12">
-                                            <button type="submit" class="btn confer-btn">Send Message <i class="zmdi zmdi-long-arrow-right"></i></button>
+                                            <button type="submit" class="btn confer-btn" >Send Message <i class="zmdi zmdi-long-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -269,9 +269,9 @@
                                 <li><a href="/index.html">Home</a></li>
                                 <li><a href="/about.html">About</a></li>
                                 <li><a href="/speakers.html">Speakers</a></li>
-                                <li><a href="/team/2021.html">Team</a></li>
+                                <li><a href="/team.html">Team</a></li>
                                 <li><a href="/contact.html">Contact</a></li>
-                                <li><a href="https://forms.gle/9C6kJ9fZWa4o8gLa9">Register</a></li>
+                                <li><a href="https://forms.gle/oDmcQnj2aijtC7ETA" target="_blank">Register</a></li>
                             </ul>
                         </div>
                     </div>
@@ -333,6 +333,27 @@
                 </div>
             </div>
         </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script> 
+        function sendEmail()
+        {
+             Email.send(
+                {
+                   SecureToken: "4f723339-18fe-4abf-b829-31382d7b0156", 
+                    To : 'aksht1211t@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "Tedxjuet contact Enquiry",
+                    Body : "Name: " + document.getElementById("name "+"name-2").value
+                    +"Email:" + document.getElementById("email").value
+                    +"Phone No: " + document.getElementById("phno").value
+                    +"Message: " + document.getElementById("message").value
+
+                }).then(
+                      message => alert("Message sent successfully")
+                       );
+        }
+    
+    </script>
     </footer>
     <!-- Footer Area End -->
 
@@ -347,6 +368,27 @@
     <script src="js/confer.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script> 
+        function sendEmail()
+        {
+             Email.send(
+                {
+                   SecureToken: "4f723339-18fe-4abf-b829-31382d7b0156", 
+                    To : 'aksht1211t@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "Tedxjuet contact Enquiry",
+                    Body : "Name: " + document.getElementById("name "+"name-2").value
+                    +"Email:" + document.getElementById("email").value
+                    +"Phone No: " + document.getElementById("phno").value
+                    +"Message: " + document.getElementById("message").value
+
+                }).then(
+                      message => alert("Message sent successfully")
+                       );
+        }
+    
+    </script>
 
 </body>
 
