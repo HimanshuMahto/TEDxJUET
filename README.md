@@ -22,7 +22,7 @@ This repository contains the code for the TEDxJUET website, which is developed f
 
 1. Clone this repository: `git clone https://github.com/HimanshuMahto/TedxJUET.git`
 2. Navigate to the project directory: `cd TedxJUET`
-3. Open the `home.html` file in a web browser to view the website.
+3. Open the `index.html` file in a web browser to view the website.
 
 ## Contributing
 
